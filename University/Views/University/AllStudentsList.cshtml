@@ -1,0 +1,21 @@
+﻿@using UniversityMVC.Models
+
+
+
+<h1>AllStudentsList</h1>
+<ul>
+@foreach (var x in (IEnumerable<Student>)ViewData["students"])
+    {
+        <li>
+            @x.StudentName
+        </li>
+        <li>
+            @x.StudentID
+        </li>
+        <li>
+            @x.StudentAge
+        </li>
+
+    }
+</ul>
+
